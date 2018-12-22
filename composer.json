@@ -98,7 +98,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
-            "npm install --silent"
+            "export GIT_DISCOVERY_ACROSS_FILESYSTEM=1 && npm install --silent"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
